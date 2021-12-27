@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.nouveau_paiement"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/new_paiemenr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.25"
+            android:text="NOUVEAU PAIEMENT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date_actuelle"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Date Actuelle (Jeudi 07 Octobre 2021)"
+            android:textColor="#DABD2A2A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CDB5B5">
+
+            <Button
+                android:id="@+id/btn_quiter_paiement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#D5DD1212"
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="MENU"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Carnet N°"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numCarnet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="number"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+        <!--FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Agent Operateur"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/agent_enregistreur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:inputType="text"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                />
+        </FrameLayout-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="6dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/mtant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Montant"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/quote_part"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:paddingLeft="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center_vertical"
+                android:textAlignment="textStart"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/btn_actualiser_paiement"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_gravity="center|right|center_vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#D5DD1212"
+                android:backgroundTintMode="add"
+                android:text="Actualiser"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/nomaff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Nom"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nom_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/prenom_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textprenom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Prenom(s)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/telephone_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Telephone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="3dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/montant_souscrit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/text_montant"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Souscription"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Total Payé"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/montant_paye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Reste à Payer"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reste_paye"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="3dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold"
+                />
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_enregistre_paiement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#4CAF50"
+
+            android:backgroundTintMode="add"
+            android:shadowColor="#B11616"
+            android:text="ENREGISTRER"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
+
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/actyclient"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#08FFFFFF"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Vue.nouveau_client"
+    tools:ignore="ExtraText">
+
+
+
+</LinearLayout>
+
+
+
+
+

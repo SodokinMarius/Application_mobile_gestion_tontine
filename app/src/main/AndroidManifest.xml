@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sodyam.philomabtontine">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cauris2"
+
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PHILOMABTONTINE">
+        <activity
+            android:name=".TestMultipleChoice"
+            android:exported="false" />
+
+        <activity android:name=".Vue.Authentification" />
+        <activity android:name=".Vue.Client_par_souscription" />
+        <activity android:name=".Vue.gestion_agents" />
+        <activity android:name=".Vue.liste_clients" />
+        <activity android:name=".Vue.liste_agents" />
+        <activity android:name=".Vue.liste_paiements" />
+        <activity android:name=".Vue.Menu" />
+        <activity android:name=".Vue.nouveau_client" />
+        <activity android:name=".Vue.nouveau_paiement" />
+        <activity android:name=".Vue.point_du_jour" />
+        <activity android:name=".Vue.point_general_activities" />
+        <activity android:name=".Vue.point_par_client" />
+        <activity android:name=".Vue.point_par_souscription" />
+
+        <activity android:name=".Vue.MainAdapter"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Vue.point_par_type_lot" />
+
+        <activity
+            android:name=".Vue.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

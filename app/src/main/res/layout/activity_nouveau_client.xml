@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.nouveau_client"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/saisi_num_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.25"
+            android:text="NOUVEAU  CLIENT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/date_actuelle_new_client"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Date Actuelle (Jeudi 07 Octobre 2021)"
+            android:textColor="#DABD2A2A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/btn_actualiser_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#4CAF50"
+
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="ACTUALISER"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btn_quiter_nouveau_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#D5DD1212"
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="MENU"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_numero_carnet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Carnet N°"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/numCarnet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="number"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textsouscription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Souscription"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/souscription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="number"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:fontFamily="serif-monospace"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/texttype_lot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Lot choisi"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/type_lot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textnom_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Nom"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nom_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_prenom_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Prenom(s)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenom_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <!--FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_date_naissancess"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Date de Naissance"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date_naiss"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#2FFFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="jj/mm/aaaa"
+                android:inputType="date"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textlieu_naissance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Lieu de Naissance"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lieu_naissance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_sexe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Sexe"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/sexe_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="textAutoComplete"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_profession"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Profession"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/profession_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_adresse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Adresse"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/adresse_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="5dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:text="Telephone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/telephone_client"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="phone"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:hint="Numero de telephone"
+                android:textSize="16sp" />
+
+
+            <!--EditText
+                android:id="@+id/saisi_num_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Numero de telephone"
+                android:inputType="phone" /-->
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn_enregistre_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="#4CAF50"
+
+            android:backgroundTintMode="add"
+            android:shadowColor="#B11616"
+            android:text="ENREGISTRER"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/ag_enrgst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Agent Enregistreur"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/agent_enregistreur"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:hint="Numero de telephone"
+                android:textSize="16sp" />
+
+        </FrameLayout-->
+
+
+    </LinearLayout>
+</ScrollView>

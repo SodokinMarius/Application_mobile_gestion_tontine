@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.gestion_agents"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/new_agent"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.25"
+            android:text="NOUVEAU AGENT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date_actuelle_agent"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Date Actuelle (Jeudi 07 Octobre 2021)"
+            android:textColor="#DABD2A2A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/btn_actualier_nouveau_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#4CAF50"
+
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="ACTUALISER"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_quiter_nouveau_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#D5DD1212"
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="MENU"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/vwnom_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Nom "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nom_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/text_prenom_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Prenom(s)"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/prenom_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <!--FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textdate_naissance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Date de Naissance"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date_naissance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:hint="jj/mm/aaaa"
+                android:inputType="date"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textlieu_naissance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Lieu Naissance"
+
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/lieu_naissance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#2FFFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+
+                android:inputType="text"
+                android:textSize="16sp" />
+
+        </FrameLayout-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/texttel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Telephone"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/telepnone_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="phone"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textadresse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Adresse"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/adresse_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textpost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Poste"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/poste_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="textAutoComplete"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textpasswd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Mot de Passe"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/passwd_agent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="textPassword"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textpasswd_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Confirmation"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/confirm_passwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="textPassword"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/btn_enregistre_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#4CAF50"
+
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="ENREGISTRER"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dip">
+
+    <FrameLayout
+        android:id="@+id/UnUtilisataur"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginTop="15dp"
+        android:background="#1440110F"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <!--        android:background="#B4CCB59D"-->
+        <TextView
+            android:id="@+id/NomPrenomUtilisataur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start|top"
+            android:layout_marginTop="10dp"
+
+            android:gravity="center"
+            android:text="Nom"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textColorLink="#0C73A1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+
+
+        <TextView
+            android:id="@+id/contactUtilisateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="98254521"
+            android:textColor="#D62727"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/poste_agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Superviseur"
+            android:textColor="#D62727"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/prenom_agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginBottom="8dp"
+            android:text="Prenom"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nombre_client_enregistre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="nombre_enregistre"
+            android:textColor="#5B27C5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_debut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:text="Date debut"
+            android:textColor="#5B27C5"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+</LinearLayout>

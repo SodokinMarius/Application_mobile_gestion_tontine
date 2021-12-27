@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.point_par_client"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|top|center_vertical"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:scrollY="@dimen/cardview_default_elevation"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/point_par_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.25"
+            android:text="POINT PAR CLIENT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date_actuelle"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Date Actuelle (Jeudi 07 Octobre 2021)"
+            android:textColor="#DABD2A2A"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <FrameLayout
+            android:id="@+id/recherche_effectif"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="15dp"
+            android:background="#14C84F49"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbarSize="16sp">
+
+            <EditText
+                android:id="@+id/zone_recherche_client"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#48B00020"
+                android:hint="Tapez le numero Carnet"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/nombre_total_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginStart="15dp"
+
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="right|center_vertical"
+
+                android:text="Effectif_clients"
+                android:textAlignment="textStart"
+                android:textColor="#1025A5"
+                android:textColorLink="#0C73A1"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+        </FrameLayout>
+
+
+         <FrameLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" >
+             <Button
+                 android:id="@+id/btn_actualiser_point_par_client"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical|left"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginTop="1dp"
+                 android:layout_marginRight="15dp"
+                 android:layout_marginBottom="2dp"
+                 android:backgroundTint="#4CAF50"
+
+                 android:backgroundTintMode="add"
+                 android:shadowColor="#B11616"
+                 android:text="ACTUALISER"
+                 android:textColor="#FFFFFF"
+                 android:textStyle="bold"
+                 android:textSize="18sp" />
+             <Button
+                 android:id="@+id/btn_quiter_point_par_client"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical|right"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginTop="1dp"
+                 android:layout_marginRight="15dp"
+                 android:layout_marginBottom="2dp"
+                 android:backgroundTint="#D5DD1212"
+                 android:backgroundTintMode="add"
+                 android:shadowColor="#B11616"
+                 android:text="RETOUR"
+                 android:textColor="#FFFFFF"
+                 android:textStyle="bold"
+                 android:textSize="18sp" />
+         </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/UnclientPoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/point_par_client_single_item"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+
+            android:background="#1440110F"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbarSize="16sp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.liste_agents"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|top|center_vertical"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:scrollY="@dimen/cardview_default_elevation"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/listeDes_agents"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.25"
+            android:text="LISTE DES AGENTS"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date_actuelle"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="12 decembre 2021"
+            android:textColor="#E8F1091C"
+            android:textColorLink="#C63030"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#1440110F">
+
+        <TextView
+            android:id="@+id/nombre_total_agent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginStart="15dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right|center_vertical"
+
+            android:text="Nombre_agent "
+            android:textAlignment="textStart"
+            android:textColor="#1025A5"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+<!--        <EditText-->
+<!--            android:id="@+id/zone_recherche_agent"-->
+<!--            android:layout_width="160dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="left"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="#48B00020"-->
+<!--            android:hint="Tapez le lot(F CFA)"-->
+<!--            android:textStyle="bold"-->
+<!--            android:inputType="text" />-->
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/btn_ajout_nouveau_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#4CAF50"
+
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="NOUVEAU"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+<!--            <Button-->
+<!--                android:id="@+id/btn_administrer_liste_agent"-->
+<!--                android:layout_width="130dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center_vertical|center|center_horizontal"-->
+<!--                android:layout_marginLeft="22dp"-->
+<!--                android:layout_marginTop="1dp"-->
+<!--                android:layout_marginRight="15dp"-->
+<!--                android:layout_marginBottom="2dp"-->
+<!--                android:backgroundTint="#000000"-->
+<!--                android:backgroundTintMode="add"-->
+<!--                android:shadowColor="#B11616"-->
+<!--                android:text="ADMINISTRER"-->
+<!--                android:textColor="#FFFFFF"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="12sp" />-->
+            <Button
+                android:id="@+id/btn_quiter_liste_agent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#D5DD1212"
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="RETOUR"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+
+
+<androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewForAgent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#1440110F"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:listitem="@layout/simple_selectable_list_item_agent"
+        android:scrollbarSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

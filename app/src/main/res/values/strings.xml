@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PHILOMAB TONTINE</string>
+    <string name="acceptautorisation">Svp acceptez l\'autorisation</string>
+    <string name="isRequired">Veuillez remplir ce champ</string>
+    <string name="confirmAgentInsertion">Agent Ajouté avec succès !</string>
+
+
+    <string-array name="postes">
+        <item>SUPERVISEUR</item>
+        <item>TRESORIER</item>
+        <item>SECRETAIRE</item>
+        <item>AGENT DE COLLECTE</item>
+    </string-array>
+
+    <string-array name="sexe">
+        <item>Masculin</item>
+        <item>Féminin</item>
+    </string-array>
+
+    <string-array name="typeLot">
+        <item>ARGENT</item>
+        <item>PAGNE</item>
+        <item>CASSEROLE OU MARMITE</item>
+        <item>RIZ</item>
+        <item>ASSIETTES</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

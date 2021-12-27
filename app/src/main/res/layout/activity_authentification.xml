@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.Authentification"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#2B9C30"
+            android:backgroundTint="#5CA043"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.5"
+            android:text="TONTINIER"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="ETS PHILOMAB"
+            android:textColor="#3949AB"
+            android:textFontWeight="5"
+            android:textSize="20sp"
+            android:letterSpacing="0.20"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Tontine -Epargne - Divers"
+            android:textColor="#8E2424"
+            android:textSize="16sp"
+            android:textStyle="bold|italic" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/logo_img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal|center_vertical"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/cauris2" />
+
+        </FrameLayout>
+
+        <!--com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/aChoicePoste"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="#8143A047"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:backgroundTintMode="add">
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/postes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|left|center_vertical"
+                android:text="POSTE OCCUPEE"
+                android:textColor="#000000"
+                android:inputType="none"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+
+            </AutoCompleteTextView>
+
+        </com.google.android.material.textfield.TextInputLayout-->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="20dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+        <TextView
+            android:id="@+id/poste"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left|center_vertical"
+            android:text="POSTE OCCUPE"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/poste_entre"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" />
+        <!--EditText
+                android:id="@+id/poste_entre"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="text"
+                android:shadowColor="#881A1A"
+                android:textSize="16sp" /-->
+        </FrameLayout>
+        <!--Spinner
+            android:id="@+id/spinner_postes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" /-->
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="20dp"
+            android:background="#8143A047"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:id="@+id/textpasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|left|center_vertical"
+                android:text="MOT DE PASSE"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/passwd_entre"
+                android:layout_width="230dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:inputType="textPassword"
+                android:shadowColor="#881A1A"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_connecter"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:background="#C8230909"
+            android:backgroundTint="#B84040"
+            android:layout_marginTop="20dp"
+            android:backgroundTintMode="add"
+            android:text="SE CONNECTER"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

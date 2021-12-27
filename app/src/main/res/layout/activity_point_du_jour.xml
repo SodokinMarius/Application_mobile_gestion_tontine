@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.point_du_jour"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|top|center_vertical"
+        android:orientation="vertical"
+        android:overScrollMode="always"
+        android:scrollY="@dimen/cardview_default_elevation"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/nouveau_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#4CAF50"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:letterSpacing="0.25"
+            android:text="POINT DU JOUR"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            tools:context=".Vue.point_du_jour" />
+
+        <TextView
+            android:id="@+id/date_actuelle_point_jour"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Date Actuelle (Jeudi 07 Octobre 2021)"
+            android:textColor="#DABD2A2A"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:id="@+id/recherche_effectif"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_marginTop="15dp"
+            android:background="#1440110F"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbarSize="16sp">
+
+            <Button
+                android:id="@+id/btn_actualiser_point_jour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="2dp"
+                android:backgroundTint="#000000"
+                android:backgroundTintMode="add"
+                android:shadowColor="#B11616"
+                android:text="ACTUALISER"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/zone_recherche_point_jour"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:background="#48B00020"
+                android:hint="aaaa/mm/jj"
+                android:gravity="center"
+                android:inputType="date" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#9EDC9D9C"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text=" Carnet Vendu"
+                android:textColor="#FAFFFFFF"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nombre_carnet_vendu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#9EDC9D9C"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Montant Carnet"
+                android:textColor="#FAFFFFFF"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/montant_carnet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#9EDC9D9C"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="QUOTE-PARTS"
+                android:textColor="#FAFFFFFF"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/total_quote_part_jour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#9EDC9D9C"
+            android:backgroundTintMode="add">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="C.A. du Jour"
+                android:textColor="#FAFFFFFF"
+                android:textSize="20sp"
+                android:paddingLeft="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chiffre_jour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_horizontal|center_vertical"
+                android:layout_marginStart="150dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="#FFFFFF"
+                android:backgroundTint="#02FFFFFF"
+                android:backgroundTintMode="add"
+                android:ems="10"
+                android:forceDarkAllowed="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:textStyle="bold"
+                android:shadowColor="#881A1A"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+
+        <Button
+            android:id="@+id/btn_quitter_point_jour"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="#4CAF50"
+
+            android:text="RETOUR"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

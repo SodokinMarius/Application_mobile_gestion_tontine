@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/UneSouscription"
+        android:layout_width="match_parent"
+
+        android:background="@drawable/border"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbarSize="16sp" >
+<!--        android:background="#1440110F"-->
+
+
+    <TextView
+        android:id="@+id/souscription_valeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="50 F"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorLink="#0C73A1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+    <TextView
+        android:id="@+id/textsouscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start|top"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="Souscription Journalière"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textColorLink="#0C73A1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+
+
+    <TextView
+        android:id="@+id/txtNombreDeClient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="Nombre de Clients"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nbre_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical|right"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="20"
+            android:textAlignment="textStart"
+            android:textColor="#BA2A2A"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+    </FrameLayout>
+</LinearLayout>

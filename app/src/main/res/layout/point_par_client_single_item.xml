@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/UnclientPoint"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbarSize="16sp">
+
+        <!--TextView
+         android:background="#1440110F"
+            android:id="@+id/textcarnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+
+            android:gravity="center"
+            android:text="Carnet N ° "
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold" /-->
+
+        <!--TextView
+            android:id="@+id/mont_dernier_paye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical|center|top"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Dernier payer "
+            android:textAlignment="textStart"
+            android:textColor="#D52D42C3"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_dernier_paye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginStart="15dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="Date dern. payer"
+            android:textAlignment="textStart"
+            android:textColor="#BA2A2A"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold" /-->
+
+        <TextView
+            android:id="@+id/numCarnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginStart="15dp"
+
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Num_carnet"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nom_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|start|top"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+
+
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="Nom"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/prenom_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="Prenom"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/montant_souscript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="8dp"
+            android:text="Lot choisi"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/montant_paye_ppc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical|right"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Montant paye"
+            android:textAlignment="textStart"
+            android:textColor="#BA2A2A"
+            android:textColorLink="#0C73A1"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/reste_paye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="8dp"
+            android:text="Reste a paye "
+            android:textColor="#43A047"
+            android:textStyle="bold" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

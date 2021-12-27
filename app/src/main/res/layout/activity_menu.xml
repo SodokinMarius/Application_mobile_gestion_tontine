@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Vue.Menu"
+    android:id="@+id/menu_app"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="0dp"
+                android:background="#4CAF50"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="MENU PRINCIPAL"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/customer_management"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#8070C67B"
+                android:backgroundTintMode="add"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="GESTION DES CLIENTS"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="88dp" />
+
+            <Button
+                android:id="@+id/client_par_souscriptionId"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4526FF00"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="CLIENTS PAR SOUSCRIPTION"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="443dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/point_by_lot_type"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#AD1E88E5"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="POINT PAR TYPE DE LOT"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="317dp" />
+
+            <Button
+                android:id="@+id/paiement_management"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="GESTION DES PAIEMENTS"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="88dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/point_par_sousciptionId"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FDD8E3"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="POINT PAR SOUSCRIPTION"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="317dp" />
+
+            <Button
+                android:id="@+id/point_by_customer"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:backgroundTint="#4A3949AB"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="POINT PAR CLIENT"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="88dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/day_point"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#4FC0CA33"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="POINT PAR JOUR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="3dp"
+                tools:layout_editor_absoluteY="317dp" />
+
+            <Button
+                android:id="@+id/agent_management"
+                android:layout_width="201dp"
+                android:layout_height="115dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:contextClickable="true"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:longClickable="true"
+                android:shadowRadius="10"
+                android:text="GESTION DES AGENTS"
+                android:backgroundTint="#7E501313"
+                android:textSize="16sp"
+                app:iconGravity="textStart"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="213dp"
+                tools:layout_editor_absoluteY="88dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/point_general"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#72C7AFCD"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:longClickable="true"
+            android:shadowRadius="10"
+            android:text="POINT GENERAL de L'ACTIVITE"
+            android:textColor="#272525"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:iconGravity="textStart"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="221dp"
+            tools:layout_editor_absoluteY="448dp" />
+
+    </LinearLayout>
+</ScrollView>
