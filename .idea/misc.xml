@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/drawable/border.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_authentification.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_client_par_souscription.xml" value="0.234375" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_gestion_agents.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_liste_agents.xml" value="0.2" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_liste_clients.xml" value="0.176" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_liste_paiements.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_nouveau_client.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_nouveau_paiement.xml" value="0.18854166666666666" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_du_jour.xml" value="0.234375" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_general_activities.xml" value="0.2" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_par_client.xml" value="0.234375" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_par_souscription.xml" value="0.2" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_par_type_lot.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/activity_test_multiple_choice.xml" value="0.128" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/client_par_sousription_single_item.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/content_adapter.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/exemplairelistepayement.xml" value="0.536" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/exemplairepointpartypedelot.xml" value="0.2" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/fragment_list__cliznt_.xml" value="0.1" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/fragment_list_client_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/liste_agent_exemplaire.xml" value="0.25" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/point_par_client_single_item.xml" value="0.203125" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/point_par_souscription_single_item.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/simple_selectable_list_item_agent.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/layout/test_multiple_item.xml" value="0.1" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AndroidStudioProjects/PHILOMABTONTINE2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_selectable_list_item.xml" value="0.25" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.178125" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_authentification.xml" value="0.1" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_client_par_souscription.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_gestion_agents.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_liste_clients.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_liste_paiements.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_nouveau_client.xml" value="0.25" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_nouveau_paiement.xml" value="0.25" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_du_jour.xml" value="0.22395833333333334" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_general_activities.xml" value="0.2" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_par_client.xml" value="0.264" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_par_souscription.xml" value="0.2" />
+        <entry key="..\:/Users/Yao Marius SODOKIN/PHILOMABTONTINE2/app/src/main/res/layout/activity_point_par_type_lot.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
